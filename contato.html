@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guia de Viagem — Contato</title>
+    <link rel="stylesheet" href="viagem.css">
+</head>
+
+<body>
+    <header>
+    <div id="wrap">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="destinos.html">Destinos</a>
+            <a href="dicas.html">Dicas</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </div>
+    </header>
+    <main id="wrap">
+    <h1>Guia de Viagem</h1>
+        <h2>Solicite seu roteiro personalizado</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome completo</label>
+                <input id="nome" name="nome" type="text" required>
+                <br>
+
+                <label for="email">E-mail de contato</label>
+                <input id="email" name="email" type="email" required>
+                <br>
+
+                <label for="pais">País de origem</label>
+                <select id="pais" name="pais" required>
+                    <option value="">--Selecione--</option>
+                    <option>Brasil</option>
+                    <option>Portugal</option>
+                    <option>Japão</option>
+                    <option>Peru</option>
+                    <option>África do Sul</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Detalhes da Viagem</legend>
+
+                <label for="data">Data prevista de viagem</label>
+                <input id="data" name="data" type="date" required>
+                <br>
+
+                <label for="nviaj">Número de viajantes</label>
+                <input id="nviaj" name="nviaj" type="number" min="1" max="12" required>
+                <br>
+
+                <label for="orcamento">Faixa de orçamento diário (R$)</label>
+                <input id="orcamento" name="orcamento" type="range" min="100" max="1500" step="50">
+                <span aria-live="polite">R$ 100</span>
+            </fieldset>
+            <fieldset>
+                <legend>Interesses</legend>
+                <input id="int1" name="interesses" type="checkbox" value="Natureza">
+                <label for="int1">Natureza</label>
+
+                <input id="int2" name="interesses" type="checkbox" value="Gastronomia">
+                <label for="int2">Gastronomia</label>
+
+                <input id="int3" name="interesses" type="checkbox" value="Museus">
+                <label for="int3">Museus</label>
+
+                <input id="int4" name="interesses" type="checkbox" value="Aventura">
+                <label for="int4">Aventura</label>
+
+                <input id="int5" name="interesses" type="checkbox" value="Praias">
+                <label for="int5">Praias</label>
+            </fieldset>
+            <fieldset>
+                <legend>Preferências</legend>
+
+                <p>Preferência de acomodação:</p>
+                <input id="acc1" name="acomodacao" type="radio" value="Hostel" required>
+                <label for="acc1">Hostel</label>
+
+                <input id="acc2" name="acomodacao" type="radio" value="Hotel">
+                <label for="acc2">Hotel</label>
+
+                <input id="acc3" name="acomodacao" type="radio" value="Apartamento">
+                <label for="acc3">Apartamento</label>
+                <br><br>
+
+                <input id="termos" name="termos" type="checkbox" required>
+                <label for="termos">Aceito os termos</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                <label for="mensagem">Mensagem adicional:</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+            <p class="note">Prazo de resposta: até 5 dias úteis após envio da solicitação.</p>
+        </form>
+    </main>
+
+    <footer id="wrap">
+        <p>© 2025 Guia de Viagem — Entre em contato para seu roteiro.</p>
+    </footer>
+</body>
+
+</html>
